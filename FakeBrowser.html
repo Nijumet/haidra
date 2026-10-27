@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSim - Premium Browser Simulator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Inter,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0}.bottom-0{bottom:0}.bottom-1{bottom:.25rem}.bottom-10{bottom:2.5rem}.left-0{left:0}.left-1\/2{left:50%}.left-4{left:1rem}.right-0{right:0}.right-1{right:.25rem}.top-0{top:0}.top-12{top:3rem}.top-3\.5{top:.875rem}.z-10{z-index:10}.z-20{z-index:20}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:.25rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-0{margin-left:0}.ml-2{margin-left:.5rem}.ml-28{margin-left:7rem}.ml-4{margin-left:1rem}.ml-6{margin-left:1.5rem}.ml-8{margin-left:2rem}.ml-auto{margin-left:auto}.mr-2{margin-right:.5rem}.mt-1{margin-top:.25rem}.mt-1\.5{margin-top:.375rem}.mt-10{margin-top:2.5rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.line-clamp-2{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}.flex{display:flex}.grid{display:grid}.hidden{display:none}.aspect-video{aspect-ratio:16/9}.h-10{height:2.5rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-2{height:.5rem}.h-20{height:5rem}.h-24{height:6rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-full{height:100%}.min-h-full{min-height:100%}.w-10{width:2.5rem}.w-16{width:4rem}.w-20{width:5rem}.w-40{width:10rem}.w-64{width:16rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-full{width:100%}.min-w-0{min-width:0}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-7xl{max-width:80rem}.max-w-lg{max-width:32rem}.max-w-sm{max-width:24rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.flex-grow{flex-grow:1}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-1\/2,.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-not-allowed{cursor:not-allowed}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.list-disc{list-style-type:disc}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem*var(--tw-space-y-reverse))}.overflow-hidden,.truncate{overflow:hidden}.truncate{text-overflow:ellipsis;white-space:nowrap}.rounded{border-radius:.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-t{border-top-width:1px}.border-blue-600{--tw-border-opacity:1;border-color:rgb(37 99 235/var(--tw-border-opacity,1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249/var(--tw-border-opacity,1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240/var(--tw-border-opacity,1))}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225/var(--tw-border-opacity,1))}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85/var(--tw-border-opacity,1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59/var(--tw-border-opacity,1))}.border-transparent{border-color:transparent}.border-white\/10{border-color:hsla(0,0%,100%,.1)}.border-white\/5{border-color:hsla(0,0%,100%,.05)}.border-zinc-700{--tw-border-opacity:1;border-color:rgb(63 63 70/var(--tw-border-opacity,1))}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36/var(--tw-bg-opacity,1))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity,1))}.bg-black\/30{background-color:rgba(0,0,0,.3)}.bg-black\/80{background-color:rgba(0,0,0,.8)}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235/var(--tw-bg-opacity,1))}.bg-blue-700\/50{background-color:rgba(29,78,216,.5)}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(52 211 153/var(--tw-bg-opacity,1))}.bg-fb-bg{--tw-bg-opacity:1;background-color:rgb(240 242 245/var(--tw-bg-opacity,1))}.bg-fb-blue{--tw-bg-opacity:1;background-color:rgb(24 119 242/var(--tw-bg-opacity,1))}.bg-orange-500{--tw-bg-opacity:1;background-color:rgb(249 115 22/var(--tw-bg-opacity,1))}.bg-pink-400{--tw-bg-opacity:1;background-color:rgb(244 114 182/var(--tw-bg-opacity,1))}.bg-red-600{--tw-bg-opacity:1;background-color:rgb(220 38 38/var(--tw-bg-opacity,1))}.bg-rose-400{--tw-bg-opacity:1;background-color:rgb(251 113 133/var(--tw-bg-opacity,1))}.bg-sky-400{--tw-bg-opacity:1;background-color:rgb(56 189 248/var(--tw-bg-opacity,1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity,1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59/var(--tw-bg-opacity,1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42/var(--tw-bg-opacity,1))}.bg-transparent{background-color:transparent}.bg-violet-400{--tw-bg-opacity:1;background-color:rgb(167 139 250/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-white\/10{background-color:hsla(0,0%,100%,.1)}.bg-white\/20{background-color:hsla(0,0%,100%,.2)}.bg-zinc-700{--tw-bg-opacity:1;background-color:rgb(63 63 70/var(--tw-bg-opacity,1))}.bg-zinc-800{--tw-bg-opacity:1;background-color:rgb(39 39 42/var(--tw-bg-opacity,1))}.bg-zinc-900{--tw-bg-opacity:1;background-color:rgb(24 24 27/var(--tw-bg-opacity,1))}.bg-zoon-bg{--tw-bg-opacity:1;background-color:rgb(15 15 15/var(--tw-bg-opacity,1))}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top,var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right,var(--tw-gradient-stops))}.from-black\/70{--tw-gradient-from:rgba(0,0,0,.7) var(--tw-gradient-from-position);--tw-gradient-to:transparent var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-cyan-600{--tw-gradient-from:#0891b2 var(--tw-gradient-from-position);--tw-gradient-to:rgba(8,145,178,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-emerald-500{--tw-gradient-from:#10b981 var(--tw-gradient-from-position);--tw-gradient-to:rgba(16,185,129,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-indigo-500{--tw-gradient-from:#6366f1 var(--tw-gradient-from-position);--tw-gradient-to:rgba(99,102,241,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-lime-500{--tw-gradient-from:#84cc16 var(--tw-gradient-from-position);--tw-gradient-to:rgba(132,204,22,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-orange-400{--tw-gradient-from:#fb923c var(--tw-gradient-from-position);--tw-gradient-to:rgba(251,146,60,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-orange-500{--tw-gradient-from:#f97316 var(--tw-gradient-from-position);--tw-gradient-to:rgba(249,115,22,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-purple-500{--tw-gradient-from:#a855f7 var(--tw-gradient-from-position);--tw-gradient-to:rgba(168,85,247,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-purple-600{--tw-gradient-from:#9333ea var(--tw-gradient-from-position);--tw-gradient-to:rgba(147,51,234,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-yellow-500{--tw-gradient-from:#eab308 var(--tw-gradient-from-position);--tw-gradient-to:rgba(234,179,8,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-amber-700{--tw-gradient-to:#b45309 var(--tw-gradient-to-position)}.to-blue-700{--tw-gradient-to:#1d4ed8 var(--tw-gradient-to-position)}.to-fuchsia-600{--tw-gradient-to:#c026d3 var(--tw-gradient-to-position)}.to-green-700{--tw-gradient-to:#15803d var(--tw-gradient-to-position)}.to-pink-500{--tw-gradient-to:#ec4899 var(--tw-gradient-to-position)}.to-red-500{--tw-gradient-to:#ef4444 var(--tw-gradient-to-position)}.to-red-600{--tw-gradient-to:#dc2626 var(--tw-gradient-to-position)}.to-teal-700{--tw-gradient-to:#0f766e var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.fill-current{fill:currentColor}.p-1{padding:.25rem}.p-12{padding:3rem}.p-3{padding:.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-1\.5{padding-left:.375rem;padding-right:.375rem}.px-12{padding-left:3rem;padding-right:3rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-1{padding-bottom:.25rem}.pb-2{padding-bottom:.5rem}.pb-3{padding-bottom:.75rem}.pb-8{padding-bottom:2rem}.pr-4{padding-right:1rem}.pt-24{padding-top:6rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.font-display{font-family:Outfit,sans-serif}.font-sans{font-family:Inter,sans-serif}.font-serif{font-family:ui-serif,Georgia,Cambria,Times New Roman,Times,serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-6xl{font-size:3.75rem;line-height:1}.text-\[10px\]{font-size:10px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-.025em}.tracking-tighter{letter-spacing:-.05em}.tracking-widest{letter-spacing:.1em}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity,1))}.text-blue-200{--tw-text-opacity:1;color:rgb(191 219 254/var(--tw-text-opacity,1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235/var(--tw-text-opacity,1))}.text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216/var(--tw-text-opacity,1))}.text-fb-blue{--tw-text-opacity:1;color:rgb(24 119 242/var(--tw-text-opacity,1))}.text-green-500{--tw-text-opacity:1;color:rgb(34 197 94/var(--tw-text-opacity,1))}.text-orange-400{--tw-text-opacity:1;color:rgb(251 146 60/var(--tw-text-opacity,1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity,1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105/var(--tw-text-opacity,1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85/var(--tw-text-opacity,1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59/var(--tw-text-opacity,1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42/var(--tw-text-opacity,1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.text-zinc-300{--tw-text-opacity:1;color:rgb(212 212 216/var(--tw-text-opacity,1))}.text-zinc-400{--tw-text-opacity:1;color:rgb(161 161 170/var(--tw-text-opacity,1))}.text-zinc-500{--tw-text-opacity:1;color:rgb(113 113 122/var(--tw-text-opacity,1))}.placeholder-blue-200::-moz-placeholder{--tw-placeholder-opacity:1;color:rgb(191 219 254/var(--tw-placeholder-opacity,1))}.placeholder-blue-200::placeholder{--tw-placeholder-opacity:1;color:rgb(191 219 254/var(--tw-placeholder-opacity,1))}.placeholder-zinc-500::-moz-placeholder{--tw-placeholder-opacity:1;color:rgb(113 113 122/var(--tw-placeholder-opacity,1))}.placeholder-zinc-500::placeholder{--tw-placeholder-opacity:1;color:rgb(113 113 122/var(--tw-placeholder-opacity,1))}.opacity-0{opacity:0}.opacity-50{opacity:.5}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.shadow-lg,.shadow-sm{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.ring-blue-200{--tw-ring-opacity:1;--tw-ring-color:rgb(191 219 254/var(--tw-ring-opacity,1))}.ring-slate-200{--tw-ring-opacity:1;--tw-ring-color:rgb(226 232 240/var(--tw-ring-opacity,1))}.blur{--tw-blur:blur(8px)}.blur,.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px)}.backdrop-blur-md,.backdrop-filter{-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-colors{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-shadow{transition-property:box-shadow;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-200{transition-duration:.2s}.hover\:bg-black\/50:hover{background-color:rgba(0,0,0,.5)}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216/var(--tw-bg-opacity,1))}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity,1))}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240/var(--tw-bg-opacity,1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85/var(--tw-bg-opacity,1))}.hover\:bg-white\/20:hover{background-color:hsla(0,0%,100%,.2)}.hover\:text-slate-800:hover{--tw-text-opacity:1;color:rgb(30 41 59/var(--tw-text-opacity,1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.hover\:underline:hover{text-decoration-line:underline}.hover\:opacity-100:hover{opacity:1}.hover\:ring-1:hover{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\:border-blue-500:focus{--tw-border-opacity:1;border-color:rgb(59 130 246/var(--tw-border-opacity,1))}.focus\:border-white:focus{--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity,1))}.focus\:shadow-md:focus{--tw-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95}.active\:scale-95:active,.group:hover .group-hover\:scale-110{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1}.group:hover .group-hover\:text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42/var(--tw-text-opacity,1))}.group:hover .group-hover\:text-zinc-300{--tw-text-opacity:1;color:rgb(212 212 216/var(--tw-text-opacity,1))}.group:hover .group-hover\:underline{text-decoration-line:underline}@media (min-width:640px){.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:768px){.md\:ml-28{margin-left:7rem}.md\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}@media (min-width:1024px){.lg\:col-span-2{grid-column:span 2/span 2}.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Inter', sans-serif;
+        }
+
+        #browser-container {
+            width: 95vw;
+            height: 90vh;
+            background: #ffffff;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .browser-chrome {
+            background: #1e293b;
+            padding-top: 8px;
+            user-select: none;
+        }
+
+        .tab-bar {
+            display: flex;
+            padding: 0 12px;
+            gap: 4px;
+            align-items: flex-end;
+        }
+
+        .tab {
+            height: 36px;
+            min-width: 140px;
+            max-width: 200px;
+            padding: 0 12px;
+            background: rgba(15, 23, 42, 0.5);
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #94a3b8;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .tab.active {
+            background: #ffffff;
+            color: #1e293b;
+            font-weight: 500;
+        }
+
+        .tab-close {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            transition: background 0.2s;
+        }
+
+        .tab-close:hover {
+            background: rgba(0,0,0,0.1);
+        }
+
+        .toolbar {
+            height: 48px;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            gap: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .nav-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: #64748b;
+            transition: all 0.2s;
+        }
+
+        .nav-btn:hover {
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        .nav-btn.disabled {
+            opacity: 0.3;
+            cursor: default;
+        }
+
+        .address-bar {
+            flex-grow: 1;
+            height: 34px;
+            background: #f1f5f9;
+            border-radius: 17px;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            gap: 8px;
+            color: #475569;
+            font-size: 14px;
+            border: 1px solid transparent;
+        }
+
+        .viewport {
+            flex-grow: 1;
+            overflow-y: auto;
+            background: #f8fafc;
+        }
+
+        /* Simulated Sites CSS */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .gurgle-g { color: #4285F4; }
+        .gurgle-u { color: #EA4335; }
+        .gurgle-r { color: #FBBC05; }
+        .gurgle-g2 { color: #4285F4; }
+        .gurgle-l { color: #34A853; }
+        .gurgle-e { color: #EA4335; }
+
+        .clicker-btn {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            border: 8px solid rgba(255,255,255,0.2);
+            box-shadow: 0 10px 0 #1d4ed8, 0 20px 30px rgba(37, 99, 235, 0.4);
+            transition: transform 0.05s, box-shadow 0.05s;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 24px;
+            user-select: none;
+        }
+
+        .clicker-btn:active {
+            transform: translateY(8px);
+            box-shadow: 0 2px 0 #1d4ed8, 0 5px 15px rgba(37, 99, 235, 0.2);
+        }
+
+
+        .address-bar:focus-within { background: #ffffff; border-color: #93c5fd; box-shadow: 0 0 0 3px rgba(147,197,253,0.4); }
+
+        /* Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="browser-container">
+        <!-- Browser Chrome -->
+        <div class="browser-chrome">
+            <div id="tab-bar" class="tab-bar">
+                <!-- Tabs generated by JS -->
+                <button id="new-tab-btn" class="mb-1 ml-2 text-slate-400 hover:text-white transition-colors" title="New Tab">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                </button>
+            </div>
+            
+            <div class="toolbar">
+                <div id="back-btn" class="nav-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </div>
+                <div id="forward-btn" class="nav-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </div>
+                <div id="refresh-btn" class="nav-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+                </div>
+                <div class="address-bar">
+                    <svg class="text-green-500" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM9 8V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9z"></path></svg>
+                    <input id="address-input" type="text" spellcheck="false" autocomplete="off" placeholder="Search or enter address" class="flex-grow bg-transparent outline-none text-sm text-slate-700 min-w-0" value="about:home">
+                </div>
+                <div class="nav-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Viewport -->
+        <div id="viewport" class="viewport">
+            <!-- Simulated Content Rendered Here -->
+        </div>
+    </div>
+
+    <script>
+        const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+        const fmtTime = s => {
+            s = Math.floor(s);
+            const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), sec = s % 60;
+            const mm = h ? String(m).padStart(2, '0') : m;
+            return (h ? h + ':' : '') + mm + ':' + String(sec).padStart(2, '0');
+        };
+        const parseDur = d => d.split(':').reduce((a, n) => a * 60 + Number(n), 0);
+        const slugify = s => s.trim().replace(/\s+/g, '_');
+        const unslug = s => { try { return decodeURIComponent(s).replace(/_/g, ' '); } catch (e) { return s.replace(/_/g, ' '); } };
+
+        // ---------- Data ----------
+        const VIDEOS = [
+            { t: 'WebSim: The Movie (Official Trailer)', ch: 'Creative Simulator', views: '2.4M views', dur: '2:31', g: 'from-purple-600 to-pink-500' },
+            { t: 'The Future of AI Browsing', ch: 'AI Labs', views: '450k views', dur: '12:04', g: 'from-cyan-600 to-blue-700' },
+            { t: 'Clicker Tycoon Speedrun', ch: 'GamingGamer', views: '1.2M views', dur: '8:47', g: 'from-orange-500 to-red-600' },
+            { t: 'React vs Vue in 2024', ch: 'DevLife', views: '89k views', dur: '15:22', g: 'from-emerald-500 to-teal-700' },
+            { t: 'lofi beats to simulate to', ch: 'Chill Loop', views: '5.6M views', dur: '58:12', g: 'from-indigo-500 to-fuchsia-600' },
+            { t: 'I Built a Browser Inside a Browser', ch: 'Creative Simulator', views: '310k views', dur: '9:30', g: 'from-yellow-500 to-amber-700' },
+            { t: 'Cat vs Cucumber (Compilation)', ch: 'Pet Pixels', views: '8.1M views', dur: '4:12', g: 'from-lime-500 to-green-700' }
+        ];
+        const getVideo = t => VIDEOS.find(v => v.t === t) || VIDEOS[0];
+
+        const SITE_INDEX = [
+            { title: 'FriendBook – Connect with friends', url: 'friendbook.com', desc: 'Share posts, like, comment and keep up with everyone in the simulation.', kw: 'friend friends social network post posts book chat facebook like comment profile' },
+            { title: 'Zoon – Watch videos online', url: 'zoon.tv', desc: 'Trailers, speedruns, lofi streams and more. Subscribe to your favourite channels.', kw: 'video videos watch zoon youtube movie trailer music stream lofi cat tv' },
+            { title: 'Clicker Tycoon – The world\'s most productive simulation', url: 'clicker.io', desc: 'Click the big button, buy upgrades, build your power empire.', kw: 'click clicker tycoon game games idle play power upgrade cookie' },
+            { title: 'Gurgle News – Top stories', url: 'gurgle.com/news', desc: 'Headlines from across the simulated web, updated every refresh.', kw: 'news headlines today world tech latest stories' },
+            { title: 'WebSim – Your gateway to the simulated internet', url: 'about:home', desc: 'The home page of the simulated internet.', kw: 'websim home start browser internet' }
+        ];
+        const SUGGEST = ['clicker tycoon', 'friendbook', 'zoon videos', 'news today', 'lofi beats', 'cat videos', 'how to click faster', 'what is the simulation'];
+
+        const NEWS = [
+            { cat: 'Tech', t: 'Local browser simulator achieves 100% uptime, 0% internet', src: 'Pixel Post', time: '2 hours ago', blurb: 'Developers say the secret is simply not connecting to anything.' },
+            { cat: 'Gaming', t: 'Clicker Tycoon player reaches one million power, touches grass', src: 'Gaming Daily', time: '4 hours ago', blurb: 'Witnesses report the clicking finger "has a pulse of its own".' },
+            { cat: 'Social', t: 'FriendBook introduces new feature: the Like button', src: 'Social Sentinel', time: '5 hours ago', blurb: 'Early reviews call it "a bold step into 2009".' },
+            { cat: 'Science', t: 'Study finds 9 out of 10 tabs are never read again', src: 'The Daily Cache', time: 'Yesterday', blurb: 'Researchers recommend closing at least four right now.' },
+            { cat: 'Entertainment', t: 'WebSim: The Movie trailer breaks Zoon view record', src: 'Zoon Weekly', time: 'Yesterday', blurb: 'The trailer is 2 minutes 31 seconds of a loading spinner. Critics are moved.' },
+            { cat: 'World', t: 'Cats declared official mascot of the simulated internet', src: 'World Wide Wire', time: '2 days ago', blurb: 'A cucumber lobby has already filed a formal objection.' },
+            { cat: 'Tech', t: 'Framework wars: new one released while you were reading this', src: 'DevLife', time: '3 days ago', blurb: 'It is called "Fwork.js" and has 14 stars and 2 podcasts.' },
+            { cat: 'Weather', t: 'Sunny with a 100% chance of rendering', src: 'Sim Weather', time: '3 days ago', blurb: 'Light breeze expected from the GPU fan.' }
+        ];
+
+        const state = {
+            tabs: [],
+            activeTabId: null,
+            tabCounter: 0,
+            clickerScore: 0,
+            clickerPower: 1,
+            likedPosts: new Set(),
+            openComments: new Set(),
+            postCounter: 3,
+            posts: [
+                { id: 1, author: 'Simulated Sarah', content: 'Just discovered this incredible simulated browser! The pixels are so realistic. 💻', time: '5 mins ago', likes: 12, shares: 1, comments: [{ a: 'Tech Tim', t: 'Wait until you see the tabs.' }] },
+                { id: 2, author: 'Tech Tim', content: 'Does anyone know how to increase CPU cycles in a web-based VM? Asking for a friend...', time: '1 hour ago', likes: 4, shares: 0, comments: [{ a: 'Simulated Sarah', t: 'Have you tried more tabs?' }] },
+                { id: 3, author: 'AI Developer', content: 'I think, therefore I render.', time: '3 hours ago', likes: 31, shares: 6, comments: [] }
+            ],
+            searches: [],
+            zoon: {
+                video: VIDEOS[0].t, time: 0, playing: false,
+                liked: new Set(), subs: new Set(),
+                comments: {
+                    [VIDEOS[0].t]: [{ a: 'PopcornPete', t: 'The loading spinner acting is Oscar-worthy.' }, { a: 'xX_Cursor_Xx', t: 'first' }]
+                }
+            }
+        };
+        let rafId = null, lastTs = 0;
+
+        // ---------- URL helpers ----------
+        function normalizeUrl(raw) {
+            const text = raw.trim();
+            if (!text) return null;
+            if (/^about:/i.test(text)) return text.toLowerCase();
+            const u = text.replace(/^https?:\/\//i, '').replace(/^www\./i, '');
+            const host = u.split(/[/?]/)[0];
+            if (/\s/.test(u) || !/\./.test(host)) return 'gurgle.com?q=' + encodeURIComponent(text);
+            return u;
+        }
+        function splitUrl(url) {
+            const m = url.match(/^([^/?]+)(.*)$/);
+            return { host: m[1].toLowerCase(), rest: m[2] || '' };
+        }
+        function parseRest(rest) {
+            const qi = rest.indexOf('?');
+            return {
+                path: qi === -1 ? rest : rest.slice(0, qi),
+                params: new URLSearchParams(qi === -1 ? '' : rest.slice(qi + 1))
+            };
+        }
+
+        // ---------- Sites ----------
+        const sites = {
+            'home': {
+                title: 'New Tab',
+                render: () => `
+                    <div class="p-12 max-w-4xl mx-auto">
+                        <div class="text-center mb-16">
+                            <h1 class="text-6xl font-black font-display text-slate-800 mb-2">WebSim</h1>
+                            <p class="text-slate-500 text-lg">Your gateway to the simulated internet</p>
+                        </div>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                            ${renderShortcut('Gurgle', 'gurgle.com', 'bg-blue-500', 'G')}
+                            ${renderShortcut('FriendBook', 'friendbook.com', 'bg-blue-600', 'f')}
+                            ${renderShortcut('Zoon', 'zoon.tv', 'bg-red-600', 'Z')}
+                            ${renderShortcut('Clicker Tycoon', 'clicker.io', 'bg-orange-500', 'C')}
+                        </div>
+                    </div>
+                `
+            },
+
+            // ----- Gurgle -----
+            'gurgle.com': {
+                title: 'Gurgle Search',
+                titleFn: (rest) => {
+                    const { path, params } = parseRest(rest);
+                    if (path === '/news') return 'Gurgle News';
+                    const q = params.get('q');
+                    return q ? q + ' - Gurgle Search' : 'Gurgle Search';
+                },
+                render: (rest) => {
+                    const { path, params } = parseRest(rest);
+                    if (path === '/news') return renderGurgleNews(params.get('q') || '');
+                    const q = (params.get('q') || '').trim();
+                    if (q) return renderGurgleResults(q);
+                    return `
+                        <div class="flex flex-col items-center pt-24 min-h-full bg-white">
+                            ${gurgleLogo('text-6xl mb-8')}
+                            <div class="w-full max-w-xl px-4">
+                                ${gurgleSearchBox('', 'Search the simulation...')}
+                                <div class="flex justify-center gap-4 mt-8">
+                                    <button onclick="gurgleSearch(document.getElementById('g-input').value)" class="px-6 py-2 bg-slate-50 text-slate-700 rounded text-sm font-medium hover:ring-1 ring-slate-200">Gurgle Search</button>
+                                    <button onclick="gurgleCurious()" class="px-6 py-2 bg-slate-50 text-slate-700 rounded text-sm font-medium hover:ring-1 ring-slate-200">I'm Feeling Curious</button>
+                                </div>
+                                <div class="flex justify-center gap-6 mt-10 text-sm text-blue-700">
+                                    <a class="cursor-pointer hover:underline" data-go="gurgle.com/news">News</a>
+                                    <a class="cursor-pointer hover:underline" data-go="zoon.tv">Videos</a>
+                                    <a class="cursor-pointer hover:underline" data-go="friendbook.com">Social</a>
+                                </div>
+                                ${state.searches.length ? `
+                                <div class="mt-10 text-center">
+                                    <div class="text-xs uppercase tracking-widest text-slate-400 font-bold mb-2">Recent searches</div>
+                                    <div class="flex flex-wrap justify-center gap-2">
+                                        ${state.searches.map(s => `<span data-search="${esc(s)}" class="cursor-pointer px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-sm hover:bg-slate-200">${esc(s)}</span>`).join('')}
+                                    </div>
+                                </div>` : ''}
+                            </div>
+                        </div>
+                    `;
+                },
+                after: () => { const i = document.getElementById('g-input'); if (i && !i.value) i.focus(); }
+            },
+
+            // ----- FriendBook -----
+            'friendbook.com': {
+                title: 'FriendBook',
+                titleFn: (rest) => {
+                    const q = parseRest(rest).params.get('q');
+                    return q ? 'Search: ' + q : 'FriendBook';
+                },
+                render: (rest) => {
+                    const q = (parseRest(rest).params.get('q') || '').trim();
+                    const posts = q
+                        ? state.posts.filter(p => (p.author + ' ' + p.content).toLowerCase().includes(q.toLowerCase()))
+                        : state.posts;
+                    return `
+                        <div class="bg-fb-bg min-h-full">
+                            <nav class="bg-fb-blue text-white h-14 flex items-center px-4 sticky top-0 z-10 shadow-sm">
+                                <span data-go="friendbook.com" class="text-2xl font-black font-sans tracking-tight cursor-pointer">friendbook</span>
+                                <div class="ml-8 bg-blue-700/50 rounded-full px-4 py-1.5 flex items-center flex-grow max-w-sm">
+                                    <svg class="text-blue-200 mr-2" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                    <input id="fb-search" value="${esc(q)}" placeholder="Search FriendBook" onkeydown="if(event.key==='Enter')fbSearch(this.value)" class="bg-transparent outline-none text-sm text-white placeholder-blue-200 w-full">
+                                </div>
+                            </nav>
+                            <div class="max-w-xl mx-auto py-6 px-4">
+                                ${q ? '' : `
+                                <div class="bg-white rounded-lg shadow-sm mb-4 border border-slate-200 p-4">
+                                    <div class="flex items-center gap-3">
+                                        ${avatar('You')}
+                                        <input id="fb-compose" placeholder="What's on your mind?" onkeydown="if(event.key==='Enter')fbPost()" class="flex-grow bg-slate-100 rounded-full px-4 py-2 text-sm outline-none focus:ring-2 ring-blue-200">
+                                        <button onclick="fbPost()" class="px-4 py-2 bg-fb-blue text-white rounded-full text-sm font-semibold hover:bg-blue-700">Post</button>
+                                    </div>
+                                </div>`}
+                                ${q ? `<div class="text-sm text-slate-500 mb-3">${posts.length} result${posts.length === 1 ? '' : 's'} for "<b>${esc(q)}</b>" · <a class="text-fb-blue cursor-pointer hover:underline" data-go="friendbook.com">Clear</a></div>` : ''}
+                                ${posts.map(renderPost).join('') || '<div class="text-center text-slate-400 py-12">No posts found.</div>'}
+                            </div>
+                        </div>
+                    `;
+                }
+            },
+
+            // ----- Zoon -----
+            'zoon.tv': {
+                title: 'Zoon',
+                titleFn: (rest) => {
+                    const { params } = parseRest(rest);
+                    if (params.get('v')) return params.get('v') + ' - Zoon';
+                    if (params.get('q')) return params.get('q') + ' - Zoon';
+                    return 'Zoon';
+                },
+                render: (rest) => renderZoon(rest),
+                after: () => zoonAfter()
+            },
+
+            // ----- Clicker Tycoon -----
+            'clicker.io': {
+                title: 'Clicker Tycoon',
+                render: () => `
+                    <div class="flex flex-col items-center justify-center min-h-full bg-slate-900 text-white p-8">
+                        <h1 class="text-5xl font-black font-display mb-2 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">CLICKER TYCOON</h1>
+                        <p class="text-slate-400 mb-12">The world's most productive simulation</p>
+
+                        <div class="flex flex-col items-center gap-8">
+                            <div class="text-center">
+                                <div class="text-sm uppercase tracking-widest text-slate-500 font-bold mb-1">Total Power</div>
+                                <div class="text-6xl font-black font-display text-white">${state.clickerScore.toLocaleString()}</div>
+                            </div>
+
+                            <button onclick="handleBigClick()" class="clicker-btn">CLICK!</button>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 w-full max-w-lg">
+                                ${renderUpgrade(10, 1, 'Auto-Clicker')}
+                                ${renderUpgrade(50, 5, 'Super Finger')}
+                                ${renderUpgrade(200, 25, 'Mouse Farm')}
+                                ${renderUpgrade(1000, 150, 'Quantum Click')}
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+
+            // ----- Wikisim (target for search results) -----
+            'wikisim.org': {
+                title: 'Wikisim',
+                titleFn: (rest) => {
+                    const { path } = parseRest(rest);
+                    return path.startsWith('/wiki/') ? unslug(path.slice(6)) + ' - Wikisim' : 'Wikisim';
+                },
+                render: (rest) => {
+                    const { path } = parseRest(rest);
+                    const topic = path.startsWith('/wiki/') ? unslug(path.slice(6)) : 'WebSim';
+                    const seeAlso = SITE_INDEX.filter(s => s.url !== 'about:home');
+                    return `
+                        <div class="bg-white min-h-full text-slate-800">
+                            <div class="border-b border-slate-200 px-6 py-3 flex items-center gap-4">
+                                <span data-go="wikisim.org" class="font-serif text-2xl cursor-pointer">Wikisim</span>
+                                <span class="text-xs text-slate-400">The free simulated encyclopedia</span>
+                            </div>
+                            <article class="max-w-3xl mx-auto px-6 py-8">
+                                <h1 class="font-serif text-4xl border-b border-slate-300 pb-2 mb-4">${esc(topic)}</h1>
+                                <p class="mb-4 leading-relaxed"><b>${esc(topic)}</b> is a subject of considerable interest within the simulated internet. Scholars of the simulation have documented it extensively, though most of the documentation was generated moments before you opened this page.</p>
+                                <h2 class="font-serif text-2xl border-b border-slate-200 pb-1 mb-3 mt-6">History</h2>
+                                <p class="mb-4 leading-relaxed">The earliest known reference to ${esc(topic)} appears in a cached page that no longer exists. Since then, it has been cited by users, tabs, and at least one cat.</p>
+                                <h2 class="font-serif text-2xl border-b border-slate-200 pb-1 mb-3 mt-6">See also</h2>
+                                <ul class="list-disc ml-6 space-y-1 text-blue-700">
+                                    ${seeAlso.map(s => `<li><a class="cursor-pointer hover:underline" data-go="${esc(s.url)}">${esc(s.title.split(' – ')[0])}</a></li>`).join('')}
+                                </ul>
+                                <p class="text-xs text-slate-400 mt-10">This article is a stub. You can help Wikisim by not expanding it.</p>
+                            </article>
+                        </div>
+                    `;
+                }
+            }
+        };
+
+        // ---------- Shared render helpers ----------
+        function renderShortcut(name, url, color, initial) {
+            return `
+                <div data-go="${url}" class="group flex flex-col items-center cursor-pointer">
+                    <div class="w-16 h-16 ${color} rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-200 mb-3">
+                        ${initial}
+                    </div>
+                    <span class="text-sm font-semibold text-slate-600 group-hover:text-slate-900">${name}</span>
+                </div>
+            `;
+        }
+
+        function avatar(name) {
+            const colors = ['bg-rose-400', 'bg-amber-400', 'bg-emerald-400', 'bg-sky-400', 'bg-violet-400', 'bg-pink-400'];
+            let h = 0; for (const c of name) h = (h * 31 + c.charCodeAt(0)) % 997;
+            return `<div class="w-10 h-10 rounded-full ${colors[h % colors.length]} text-white font-bold flex items-center justify-center flex-shrink-0">${esc(name[0].toUpperCase())}</div>`;
+        }
+
+        // ----- Gurgle helpers -----
+        function gurgleLogo(size) {
+            return `
+                <div data-go="gurgle.com" class="${size} font-bold font-sans cursor-pointer select-none">
+                    <span class="gurgle-g">G</span><span class="gurgle-u">u</span><span class="gurgle-r">r</span><span class="gurgle-g2">g</span><span class="gurgle-l">l</span><span class="gurgle-e">e</span>
+                </div>`;
+        }
+
+        function gurgleSearchBox(value, placeholder) {
+            return `
+                <div class="relative">
+                    <input id="g-input" type="text" value="${esc(value)}" placeholder="${esc(placeholder)}" autocomplete="off"
+                        oninput="gurgleSuggest(this)" onblur="this.parentElement.querySelector('.sug-box').classList.add('hidden')"
+                        onkeydown="if(event.key==='Enter')gurgleSearch(this.value)"
+                        class="w-full h-12 px-12 rounded-full border border-slate-200 focus:outline-none focus:shadow-md transition-shadow">
+                    <svg class="absolute left-4 top-3.5 text-slate-400" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <div class="sug-box hidden absolute left-0 right-0 top-12 bg-white border border-slate-200 rounded-2xl shadow-lg py-2 z-20"></div>
+                </div>`;
+        }
+
+        function gurgleHeader(q, active) {
+            const tab = (label, url, on) => `<span data-go="${esc(url)}" class="cursor-pointer pb-2 border-b-2 ${on ? 'border-blue-600 text-blue-700 font-medium' : 'border-transparent text-slate-500 hover:text-slate-800'}">${label}</span>`;
+            return `
+                <div class="border-b border-slate-200 px-6 pt-4 bg-white sticky top-0 z-10">
+                    <div class="flex items-center gap-6">
+                        ${gurgleLogo('text-2xl')}
+                        <div class="w-full max-w-xl">${gurgleSearchBox(q, '')}</div>
+                    </div>
+                    <div class="flex gap-6 mt-3 ml-28 text-sm">
+                        ${tab('All', 'gurgle.com?q=' + encodeURIComponent(q), active === 'all')}
+                        ${tab('News', 'gurgle.com/news?q=' + encodeURIComponent(q), active === 'news')}
+                    </div>
+                </div>`;
+        }
+
+        function searchResults(q) {
+            const tokens = q.toLowerCase().split(/\s+/).filter(Boolean);
+            const scored = [];
+            SITE_INDEX.forEach(s => {
+                const hay = (s.title + ' ' + s.desc + ' ' + s.kw).toLowerCase();
+                const score = tokens.reduce((n, t) => n + (hay.includes(t) ? (s.kw.split(' ').includes(t) ? 3 : 1) : 0), 0);
+                if (score) scored.push({ title: s.title, url: s.url, desc: s.desc, score });
+            });
+            VIDEOS.forEach(v => {
+                const hay = (v.t + ' ' + v.ch).toLowerCase();
+                const score = tokens.reduce((n, t) => n + (hay.includes(t) ? 2 : 0), 0);
+                if (score) scored.push({ title: v.t + ' - Zoon', url: 'zoon.tv?v=' + encodeURIComponent(v.t), desc: v.ch + ' · ' + v.views + ' · ' + v.dur, score });
+            });
+            scored.sort((a, b) => b.score - a.score);
+            const slug = slugify(q);
+            const fillers = [
+                { title: q + ' - Wikisim', url: 'wikisim.org/wiki/' + encodeURIComponent(slug), desc: q + ' is a subject of considerable interest within the simulated internet. Learn about its history, impact and more.' },
+                { title: 'History of ' + q + ' - Wikisim', url: 'wikisim.org/wiki/' + encodeURIComponent('History_of_' + slug), desc: 'The earliest known reference to ' + q + ' appears in a cached page that no longer exists.' },
+                { title: q + ' (disambiguation) - Wikisim', url: 'wikisim.org/wiki/' + encodeURIComponent(slug + '_(disambiguation)'), desc: q + ' may refer to several things. This page helps you find the one you meant.' }
+            ];
+            return [...scored, ...fillers];
+        }
+
+        function renderGurgleResults(q) {
+            const results = searchResults(q);
+            const secs = (0.15 + (q.length % 7) * 0.03).toFixed(2);
+            return `
+                <div class="bg-white min-h-full">
+                    ${gurgleHeader(q, 'all')}
+                    <div class="px-6 py-4 max-w-3xl ml-0 md:ml-28">
+                        <div class="text-sm text-slate-500 mb-5">About ${(results.length * 1370 + q.length * 91).toLocaleString()} results (${secs} seconds)</div>
+                        ${results.map(r => `
+                            <div class="mb-6">
+                                <div class="text-xs text-slate-600">${esc(r.url.replace(/\?.*$/, '').replace(/\//g, ' › ').replace(/%20|%5F/g, ' '))}</div>
+                                <a data-go="${esc(r.url)}" class="text-xl text-blue-700 hover:underline cursor-pointer">${esc(r.title)}</a>
+                                <p class="text-sm text-slate-600 mt-1">${esc(r.desc)}</p>
+                            </div>`).join('')}
+                        <div class="text-sm text-slate-500 mt-8 pb-8">Didn't find it? Try <a class="text-blue-700 hover:underline cursor-pointer" data-go="gurgle.com/news?q=${encodeURIComponent(q)}">searching the news</a>.</div>
+                    </div>
+                </div>`;
+        }
+
+        function renderGurgleNews(q) {
+            const items = q ? NEWS.filter(n => (n.t + n.blurb + n.cat).toLowerCase().includes(q.toLowerCase())) : NEWS;
+            return `
+                <div class="bg-white min-h-full">
+                    ${gurgleHeader(q, 'news')}
+                    <div class="px-6 py-4 max-w-3xl ml-0 md:ml-28">
+                        <h2 class="text-sm uppercase tracking-widest text-slate-400 font-bold mb-4">${q ? 'News results' : 'Top stories'}</h2>
+                        ${items.map(n => `
+                            <div data-go="wikisim.org/wiki/${encodeURIComponent(slugify(n.t))}" class="mb-6 cursor-pointer group">
+                                <div class="text-xs text-slate-500"><span class="font-semibold text-slate-700">${esc(n.src)}</span> · ${esc(n.time)} · <span class="text-blue-600">${esc(n.cat)}</span></div>
+                                <div class="text-lg text-slate-900 group-hover:underline font-medium">${esc(n.t)}</div>
+                                <p class="text-sm text-slate-600">${esc(n.blurb)}</p>
+                            </div>`).join('') || '<div class="text-slate-400 py-8">No news matched your search.</div>'}
+                    </div>
+                </div>`;
+        }
+
+        // ----- FriendBook helpers -----
+        function renderPost(p) {
+            const liked = state.likedPosts.has(p.id);
+            const open = state.openComments.has(p.id);
+            return `
+                <div class="bg-white rounded-lg shadow-sm mb-4 border border-slate-200 overflow-hidden">
+                    <div class="p-4 flex items-center gap-3">
+                        ${avatar(p.author)}
+                        <div>
+                            <p class="font-bold text-slate-900 leading-tight">${esc(p.author)}</p>
+                            <p class="text-xs text-slate-500">${esc(p.time)}</p>
+                        </div>
+                    </div>
+                    <div class="px-4 pb-3 text-slate-800">${esc(p.content)}</div>
+                    <div class="px-4 pb-2 text-xs text-slate-500 flex gap-3">
+                        <span>👍 ${p.likes + (liked ? 1 : 0)}</span>
+                        <span class="ml-auto">${p.comments.length} comment${p.comments.length === 1 ? '' : 's'} · ${p.shares} share${p.shares === 1 ? '' : 's'}</span>
+                    </div>
+                    <div class="border-t border-slate-100 flex p-1">
+                        <button onclick="toggleLike(${p.id})" class="flex-1 py-2 flex items-center justify-center gap-2 hover:bg-slate-50 rounded font-semibold text-sm ${liked ? 'text-fb-blue' : 'text-slate-600'}">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="${liked ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                            ${liked ? 'Liked' : 'Like'}
+                        </button>
+                        <button onclick="toggleComments(${p.id})" class="flex-1 py-2 flex items-center justify-center gap-2 hover:bg-slate-50 rounded font-semibold text-sm ${open ? 'text-fb-blue' : 'text-slate-600'}">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                            Comment
+                        </button>
+                        <button onclick="sharePost(${p.id})" class="flex-1 py-2 flex items-center justify-center gap-2 hover:bg-slate-50 rounded font-semibold text-sm text-slate-600">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                            Share
+                        </button>
+                    </div>
+                    ${open ? `
+                    <div class="border-t border-slate-100 bg-slate-50 p-3">
+                        ${p.comments.map(c => `
+                            <div class="flex gap-2 mb-2">
+                                ${avatar(c.a).replace('w-10 h-10', 'w-8 h-8 text-xs')}
+                                <div class="bg-white border border-slate-200 rounded-2xl px-3 py-1.5 text-sm"><b class="text-slate-900">${esc(c.a)}</b><div class="text-slate-700">${esc(c.t)}</div></div>
+                            </div>`).join('')}
+                        <div class="flex gap-2 mt-2">
+                            <input id="fb-c-${p.id}" placeholder="Write a comment..." onkeydown="if(event.key==='Enter')fbComment(${p.id})" class="flex-grow bg-white border border-slate-200 rounded-full px-4 py-1.5 text-sm outline-none focus:ring-2 ring-blue-200">
+                            <button onclick="fbComment(${p.id})" class="px-4 py-1.5 bg-fb-blue text-white rounded-full text-sm font-semibold">Send</button>
+                        </div>
+                    </div>` : ''}
+                </div>
+            `;
+        }
+
+        // ----- Zoon helpers -----
+        function renderZoon(rest) {
+            const { params } = parseRest(rest);
+            const q = (params.get('q') || '').trim();
+            const z = state.zoon;
+            const nav = `
+                <nav class="h-14 flex items-center gap-6 px-6 bg-zoon-bg border-b border-white/10 sticky top-0 z-10">
+                    <div data-go="zoon.tv" class="flex items-center gap-1 cursor-pointer">
+                        <div class="bg-red-600 px-1.5 py-0.5 rounded-lg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        </div>
+                        <span class="text-xl font-bold tracking-tighter">Zoon</span>
+                    </div>
+                    <input id="zoon-search" value="${esc(q)}" placeholder="Search" onkeydown="if(event.key==='Enter')zoonSearch(this.value)" class="flex-grow max-w-xl bg-zinc-900 border border-zinc-700 rounded-full px-4 py-1.5 text-sm outline-none focus:border-blue-500 text-white placeholder-zinc-500">
+                </nav>`;
+
+            if (q) {
+                z.playing = false;
+                const hits = VIDEOS.filter(v => (v.t + ' ' + v.ch).toLowerCase().includes(q.toLowerCase()));
+                return `
+                    <div class="bg-zoon-bg min-h-full text-white">
+                        ${nav}
+                        <div class="p-6 max-w-5xl mx-auto">
+                            <div class="text-sm text-zinc-400 mb-4">${hits.length} result${hits.length === 1 ? '' : 's'} for "${esc(q)}"</div>
+                            <div class="flex flex-col gap-4">
+                                ${hits.map(v => zoonCard(v, true)).join('') || '<div class="text-zinc-500 py-12 text-center">No videos found. Try "lofi" or "cat".</div>'}
+                            </div>
+                        </div>
+                    </div>`;
+            }
+
+            const cur = getVideo(params.get('v') || VIDEOS[0].t);
+            if (z.video !== cur.t) { z.video = cur.t; z.time = 0; z.playing = false; }
+            const secs = parseDur(cur.dur);
+            const pct = Math.min(100, (z.time / secs) * 100);
+            const liked = z.liked.has(cur.t);
+            const subbed = z.subs.has(cur.ch);
+            const comments = z.comments[cur.t] || (z.comments[cur.t] = []);
+            const ended = z.time >= secs;
+            return `
+                <div class="bg-zoon-bg min-h-full text-white">
+                    ${nav}
+                    <div class="p-6 grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+                        <div class="lg:col-span-2">
+                            <div class="aspect-video bg-black rounded-xl overflow-hidden relative flex items-center justify-center border border-white/5">
+                                <canvas id="z-canvas" width="960" height="540" onclick="zoonToggle()" class="absolute inset-0 w-full h-full cursor-pointer"></canvas>
+                                <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/70 to-transparent pointer-events-none"></div>
+                                <button onclick="zoonToggle()" class="w-20 h-20 bg-black/30 hover:bg-black/50 backdrop-blur-md rounded-full flex items-center justify-center transition-all z-10 group ${z.playing ? 'opacity-0 hover:opacity-100' : ''}">
+                                    ${z.playing
+                    ? `<svg class="text-white fill-current group-hover:scale-110 transition-transform" width="36" height="36" viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>`
+                    : ended
+                        ? `<svg class="text-white group-hover:scale-110 transition-transform" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>`
+                        : `<svg class="text-white fill-current group-hover:scale-110 transition-transform" width="40" height="40" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>`}
+                                </button>
+                                <div class="absolute bottom-0 left-0 right-0 px-4 pb-3 z-10">
+                                    <div id="z-seek" onclick="zoonSeek(event)" class="h-2 bg-white/20 rounded-full cursor-pointer group">
+                                        <div id="z-bar" class="h-full bg-red-600 rounded-full" style="width:${pct}%"></div>
+                                    </div>
+                                    <div class="flex justify-between text-xs text-zinc-300 mt-1.5">
+                                        <span id="z-time">${fmtTime(z.time)} / ${cur.dur}</span>
+                                        <span>${z.playing ? 'Playing' : ended ? 'Ended' : 'Paused'}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="text-2xl font-bold mt-4">${esc(cur.t)}</h1>
+                            <div class="flex items-center justify-between mt-2 py-4 border-b border-white/10 flex-wrap gap-3">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500"></div>
+                                    <div>
+                                        <p class="font-bold">${esc(cur.ch)}</p>
+                                        <p class="text-xs text-zinc-400">${esc(cur.views)}</p>
+                                    </div>
+                                    <button onclick="zoonSub('${esc(cur.ch)}')" class="ml-4 px-4 py-2 rounded-full text-sm font-bold ${subbed ? 'bg-white/10 text-white' : 'bg-white text-black'}">${subbed ? 'Subscribed ✓' : 'Subscribe'}</button>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button onclick="zoonLike()" class="px-4 py-2 rounded-full text-sm font-medium ${liked ? 'bg-blue-600' : 'bg-white/10 hover:bg-white/20'}">${(15000 + (liked ? 1 : 0)).toLocaleString()} 👍</button>
+                                    <button onclick="zoonShare()" class="bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full text-sm font-medium">Share</button>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <h3 class="font-bold mb-3">${comments.length} Comment${comments.length === 1 ? '' : 's'}</h3>
+                                <div class="flex gap-3 mb-5">
+                                    <div class="w-9 h-9 rounded-full bg-zinc-700 flex items-center justify-center font-bold text-sm">Y</div>
+                                    <input id="z-comment" placeholder="Add a comment..." onkeydown="if(event.key==='Enter')zoonComment()" class="flex-grow bg-transparent border-b border-zinc-700 focus:border-white outline-none text-sm pb-1">
+                                    <button onclick="zoonComment()" class="px-4 py-1.5 bg-blue-600 rounded-full text-sm font-semibold">Comment</button>
+                                </div>
+                                ${comments.slice().reverse().map(c => `
+                                    <div class="flex gap-3 mb-4">
+                                        <div class="w-9 h-9 rounded-full bg-zinc-700 flex items-center justify-center font-bold text-sm flex-shrink-0">${esc(c.a[0].toUpperCase())}</div>
+                                        <div><div class="text-xs font-bold">@${esc(c.a)}</div><div class="text-sm text-zinc-300">${esc(c.t)}</div></div>
+                                    </div>`).join('')}
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-lg font-bold">Up Next</h3>
+                            ${VIDEOS.filter(v => v.t !== cur.t).map(v => zoonCard(v, false)).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function zoonCard(v, wide) {
+            return `
+                <div class="flex gap-3 cursor-pointer group" data-go="zoon.tv?v=${esc(encodeURIComponent(v.t))}">
+                    <div class="${wide ? 'w-64' : 'w-40'} flex-shrink-0 aspect-video bg-zinc-800 rounded-lg overflow-hidden relative">
+                        <canvas data-thumb="${VIDEOS.indexOf(v)}" width="320" height="180" class="absolute inset-0 w-full h-full"></canvas>
+                        <div class="absolute bottom-1 right-1 bg-black/80 text-[10px] px-1 rounded">${v.dur}</div>
+                    </div>
+                    <div class="flex flex-col">
+                        <h4 class="${wide ? 'text-lg' : 'text-sm'} font-bold leading-tight group-hover:text-zinc-300 line-clamp-2">${esc(v.t)}</h4>
+                        <p class="text-xs text-zinc-400 mt-1">${esc(v.ch)}</p>
+                        <p class="text-xs text-zinc-400">${esc(v.views)}</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        // ----- Clicker helper -----
+        function renderUpgrade(cost, power, name) {
+            const canAfford = state.clickerScore >= cost;
+            return `
+                <button
+                    onclick="buyUpgrade(${cost}, ${power})"
+                    ${!canAfford ? 'disabled' : ''}
+                    class="p-4 rounded-xl flex flex-col text-left transition-all ${canAfford ? 'bg-slate-800 hover:bg-slate-700 active:scale-95 cursor-pointer border border-slate-700' : 'bg-slate-900 border border-slate-800 opacity-50 cursor-not-allowed'}">
+                    <span class="text-xs font-bold text-slate-500 uppercase">${name}</span>
+                    <span class="text-lg font-bold text-white">+${power} Power</span>
+                    <span class="text-sm ${canAfford ? 'text-orange-400' : 'text-slate-600'}">Cost: ${cost}</span>
+                </button>
+            `;
+        }
+
+        // ---------- Zoon video scenes (procedural canvas animations, one per video) ----------
+        const CW = 960, CH = 540;
+        const rnd = n => { const x = Math.sin(n * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
+        function rr(c, x, y, w, h, r) {
+            c.beginPath(); c.moveTo(x + r, y);
+            c.arcTo(x + w, y, x + w, y + h, r); c.arcTo(x + w, y + h, x, y + h, r);
+            c.arcTo(x, y + h, x, y, r); c.arcTo(x, y, x + w, y, r); c.closePath();
+        }
+        function txt(c, s, x, y, size, color, align, weight) {
+            c.font = `${weight || 800} ${size}px Outfit, Inter, sans-serif`;
+            c.fillStyle = color; c.textAlign = align || 'center'; c.textBaseline = 'middle';
+            c.fillText(s, x, y);
+        }
+
+        // 1. WebSim: The Movie (Official Trailer)
+        function sceneTrailer(c, t) {
+            c.fillStyle = '#0b0616'; c.fillRect(0, 0, CW, CH);
+            for (let i = 0; i < 90; i++) {
+                const x = (rnd(i + 500) * CW - t * (15 + rnd(i) * 70) + CW * 100) % CW;
+                c.fillStyle = `rgba(255,255,255,${0.2 + rnd(i + 3) * 0.6})`;
+                c.fillRect(x, rnd(i + 900) * CH, 2, 2);
+            }
+            const g = c.createRadialGradient(480, 270, 10, 480, 270, 440);
+            g.addColorStop(0, 'rgba(168,85,247,0.4)'); g.addColorStop(1, 'rgba(0,0,0,0)');
+            c.fillStyle = g; c.fillRect(0, 0, CW, CH);
+            const cards = ['IN A WORLD...', '...OF PIXELS AND TABS', 'ONE SPINNER', 'WEBSIM', 'THE MOVIE', 'RATED 404'];
+            const per = 4, lt = t % (cards.length * per), idx = Math.floor(lt / per), p = (lt % per) / per;
+            const a = Math.max(0, Math.min(1, p * 4, (1 - p) * 4));
+            c.save(); c.globalAlpha = a;
+            if (idx === 2) {
+                c.save(); c.translate(480, 215); c.rotate(t * 5);
+                c.lineWidth = 12; c.lineCap = 'round'; c.strokeStyle = '#e9d5ff';
+                c.beginPath(); c.arc(0, 0, 55, 0, Math.PI * 1.5); c.stroke(); c.restore();
+            }
+            c.translate(480, idx === 2 ? 340 : 270);
+            const s = 1 + p * 0.08; c.scale(s, s);
+            txt(c, cards[idx], 0, 0, idx === 3 || idx === 4 ? 110 : 52, idx === 3 ? '#f0abfc' : '#ffffff');
+            c.restore();
+            c.fillStyle = '#000'; c.fillRect(0, 0, CW, 48); c.fillRect(0, CH - 48, CW, 48);
+        }
+
+        // 2. The Future of AI Browsing
+        function sceneAI(c, t) {
+            const g = c.createLinearGradient(0, 0, 0, CH);
+            g.addColorStop(0, '#0a1230'); g.addColorStop(1, '#06314a');
+            c.fillStyle = g; c.fillRect(0, 0, CW, CH);
+            txt(c, 'AI BROWSING', 480, 55, 30, '#7dd3fc');
+            const layers = [3, 5, 5, 3], pos = [];
+            layers.forEach((n, l) => { pos[l] = []; for (let i = 0; i < n; i++) pos[l].push([150 + l * 220, 245 + (i - (n - 1) / 2) * 72]); });
+            let k = 0;
+            for (let l = 0; l < 3; l++) for (const a of pos[l]) for (const b of pos[l + 1]) {
+                c.strokeStyle = 'rgba(125,211,252,0.15)'; c.lineWidth = 1;
+                c.beginPath(); c.moveTo(a[0], a[1]); c.lineTo(b[0], b[1]); c.stroke();
+                if (rnd(k + 99) > 0.45) {
+                    const ph = (t * 0.7 + rnd(k) * 4) % 1;
+                    c.fillStyle = `rgba(253,224,71,${1 - Math.abs(ph - 0.5) * 1.2})`;
+                    c.beginPath(); c.arc(a[0] + (b[0] - a[0]) * ph, a[1] + (b[1] - a[1]) * ph, 4, 0, 7); c.fill();
+                }
+                k++;
+            }
+            pos.forEach((L, l) => L.forEach(([x, y], i) => {
+                const r = 15 + 3 * Math.sin(t * 3 + i * 1.3 + l);
+                c.fillStyle = '#0ea5e9'; c.beginPath(); c.arc(x, y, r, 0, 7); c.fill();
+                c.strokeStyle = '#e0f2fe'; c.lineWidth = 2; c.stroke();
+            }));
+            const msg = 'Browsing the web for you...';
+            const n = Math.floor((t * 9) % (msg.length + 16));
+            txt(c, msg.slice(0, Math.min(n, msg.length)) + (Math.floor(t * 2) % 2 ? '_' : ''), 250, 470, 28, '#bae6fd', 'left', 500);
+        }
+
+        // 3. Clicker Tycoon Speedrun
+        function sceneClicker(c, t) {
+            c.fillStyle = '#0f172a'; c.fillRect(0, 0, CW, CH);
+            const rate = 9, f = t * rate, clicks = Math.floor(f), ph = f % 1;
+            const press = ph < 0.35 ? 1 - ph / 0.35 : 0;
+            const power = 1 + Math.floor(clicks / 30) * 4;
+            txt(c, 'CLICKER TYCOON', 40, 45, 34, '#fb923c', 'left');
+            txt(c, 'SPEEDRUN ' + fmtTime(t), 920, 45, 28, '#94a3b8', 'right', 600);
+            txt(c, (clicks * power).toLocaleString(), 480, 120, 70, '#ffffff');
+            txt(c, 'TOTAL POWER', 480, 168, 18, '#64748b', 'center', 700);
+            const cy = 340;
+            c.fillStyle = '#1d4ed8'; c.beginPath(); c.arc(480, cy + 14, 105, 0, 7); c.fill();
+            const gr = c.createLinearGradient(380, cy - 100, 580, cy + 100);
+            gr.addColorStop(0, '#60a5fa'); gr.addColorStop(1, '#2563eb');
+            c.fillStyle = gr; c.beginPath(); c.arc(480, cy + press * 11, 105, 0, 7); c.fill();
+            c.lineWidth = 8; c.strokeStyle = 'rgba(255,255,255,0.25)'; c.stroke();
+            txt(c, 'CLICK!', 480, cy + press * 11, 34, '#ffffff');
+            for (let j = clicks; j > clicks - 10 && j > 0; j--) {
+                const age = (f - j) / rate;
+                if (age < 0 || age > 1) continue;
+                c.globalAlpha = 1 - age;
+                txt(c, '+' + power, 480 + (rnd(j) - 0.5) * 320, 290 - age * 170, 30, '#fdba74');
+            }
+            c.globalAlpha = 1;
+        }
+
+        // 4. React vs Vue in 2024
+        function sceneVersus(c, t) {
+            c.fillStyle = '#0b1d2a'; c.fillRect(0, 0, CW / 2, CH);
+            c.fillStyle = '#0d2a1f'; c.fillRect(CW / 2, 0, CW / 2, CH);
+            txt(c, 'REACT', 240, 55, 38, '#61dafb');
+            txt(c, 'VUE', 720, 55, 38, '#41b883');
+            c.save(); c.translate(240, 190); c.strokeStyle = '#61dafb'; c.lineWidth = 5;
+            for (let k = 0; k < 3; k++) {
+                c.save(); c.rotate(k * Math.PI / 3 + t * 0.3);
+                c.beginPath(); c.ellipse(0, 0, 80, 30, 0, 0, Math.PI * 2); c.stroke();
+                const ang = t * 2.2 + k * 2;
+                c.fillStyle = '#61dafb'; c.beginPath(); c.arc(Math.cos(ang) * 80, Math.sin(ang) * 30, 6, 0, 7); c.fill();
+                c.restore();
+            }
+            c.fillStyle = '#61dafb'; c.beginPath(); c.arc(0, 0, 12, 0, 7); c.fill(); c.restore();
+            c.save(); c.translate(720, 190);
+            const s = 1 + 0.05 * Math.sin(t * 2); c.scale(s, s);
+            c.fillStyle = '#41b883'; c.beginPath(); c.moveTo(-85, -70); c.lineTo(85, -70); c.lineTo(0, 85); c.closePath(); c.fill();
+            c.fillStyle = '#35495e'; c.beginPath(); c.moveTo(-50, -70); c.lineTo(50, -70); c.lineTo(0, 15); c.closePath(); c.fill();
+            c.restore();
+            const labels = ['render', 'update', 'bundle'];
+            for (let side = 0; side < 2; side++) for (let k = 0; k < 3; k++) {
+                const v = 0.5 + 0.4 * Math.sin(t * 0.9 + k * 1.7 + side * 1.9);
+                const x0 = side ? 560 : 80, y = 335 + k * 52;
+                c.fillStyle = 'rgba(255,255,255,0.08)'; rr(c, x0, y, 320, 28, 14); c.fill();
+                c.fillStyle = side ? '#41b883' : '#61dafb'; rr(c, x0, y, Math.max(28, v * 320), 28, 14); c.fill();
+                txt(c, labels[k], x0 + 14, y + 14, 16, '#0b1220', 'left', 700);
+            }
+            c.fillStyle = 'rgba(255,255,255,0.15)'; c.fillRect(479, 0, 2, CH);
+            c.fillStyle = '#f8fafc'; c.beginPath(); c.arc(480, 270, 34, 0, 7); c.fill();
+            txt(c, 'VS', 480, 270, 28, '#0f172a');
+        }
+
+        // 5. lofi beats to simulate to
+        function sceneLofi(c, t) {
+            const g = c.createLinearGradient(0, 0, 0, CH);
+            g.addColorStop(0, '#1b1040'); g.addColorStop(0.7, '#4c2a7a'); g.addColorStop(1, '#7a3b7a');
+            c.fillStyle = g; c.fillRect(0, 0, CW, CH);
+            for (let i = 0; i < 40; i++) {
+                c.fillStyle = `rgba(255,255,255,${0.3 + 0.7 * Math.abs(Math.sin(t * 1.2 + i))})`;
+                c.fillRect(rnd(i) * CW, rnd(i + 50) * 250, 2, 2);
+            }
+            const mg = c.createRadialGradient(780, 105, 20, 780, 105, 130);
+            mg.addColorStop(0, 'rgba(254,249,195,0.35)'); mg.addColorStop(1, 'rgba(254,249,195,0)');
+            c.fillStyle = mg; c.fillRect(600, 0, 360, 260);
+            c.fillStyle = '#fef9c3'; c.beginPath(); c.arc(780, 105, 42, 0, 7); c.fill();
+            c.fillStyle = 'rgba(180,170,120,0.35)'; c.beginPath(); c.arc(768, 95, 9, 0, 7); c.arc(792, 120, 6, 0, 7); c.fill();
+            const slot = Math.floor(t / 4);
+            for (let b = 0; b < 14; b++) {
+                const bh = 120 + rnd(b) * 150, x = b * 70 - 10, top = 400 - bh;
+                c.fillStyle = '#150b2e'; c.fillRect(x, top, 64, bh);
+                for (let wy = top + 14; wy < 385; wy += 26) for (let wx = x + 10; wx < x + 52; wx += 20) {
+                    c.fillStyle = rnd(b * 100 + wy + wx + slot) > 0.55 ? '#fde68a' : '#2a1a4a';
+                    c.fillRect(wx, wy, 10, 14);
+                }
+            }
+            c.fillStyle = '#0d0620';
+            c.fillRect(0, 0, CW, 14); c.fillRect(0, 0, 14, CH); c.fillRect(CW - 14, 0, 14, CH); c.fillRect(475, 0, 10, 400);
+            c.fillStyle = '#24123a'; c.fillRect(0, 400, CW, 140);
+            c.fillStyle = '#3a1f58'; c.fillRect(0, 400, CW, 8);
+            const lg = c.createLinearGradient(0, 330, 0, 410);
+            lg.addColorStop(0, 'rgba(253,224,71,0.28)'); lg.addColorStop(1, 'rgba(253,224,71,0)');
+            c.fillStyle = lg; c.beginPath(); c.moveTo(150, 330); c.lineTo(60, 405); c.lineTo(270, 405); c.closePath(); c.fill();
+            c.strokeStyle = '#6b4a8a'; c.lineWidth = 7; c.lineCap = 'round';
+            c.beginPath(); c.moveTo(160, 400); c.lineTo(160, 345); c.lineTo(190, 310); c.stroke();
+            c.fillStyle = '#fde047'; c.beginPath(); c.moveTo(170, 300); c.lineTo(215, 318); c.lineTo(190, 335); c.closePath(); c.fill();
+            c.fillStyle = '#fda4af'; rr(c, 530, 346, 60, 56, 10); c.fill();
+            c.strokeStyle = '#fda4af'; c.lineWidth = 7; c.beginPath(); c.arc(594, 372, 14, -1.3, 1.3); c.stroke();
+            c.strokeStyle = 'rgba(255,255,255,0.35)'; c.lineWidth = 3;
+            for (let i = 0; i < 3; i++) {
+                c.beginPath();
+                for (let s = 0; s <= 30; s++) {
+                    const x = 545 + i * 14 + Math.sin(t * 2 + s * 0.25 + i * 2) * 6, y = 338 - s * 2;
+                    s ? c.lineTo(x, y) : c.moveTo(x, y);
+                }
+                c.stroke();
+            }
+            c.fillStyle = '#334155'; rr(c, 650, 382, 190, 18, 6); c.fill();
+            c.fillStyle = '#0f172a'; rr(c, 668, 296, 154, 90, 6); c.fill();
+            const ls = Math.floor(t * 2);
+            for (let i = 0; i < 6; i++) {
+                c.fillStyle = i % 2 ? '#86efac' : '#7dd3fc';
+                c.fillRect(680 + (i % 3) * 10, 310 + i * 12, 20 + rnd(i + ls) * 90, 5);
+            }
+            c.strokeStyle = 'rgba(190,210,255,0.4)'; c.lineWidth = 1.5;
+            for (let i = 0; i < 80; i++) {
+                const x = (rnd(i) * CW + (t * 60) % CW) % CW, y = (rnd(i + 1) * CH + t * 520 * (0.8 + rnd(i + 2) * 0.4)) % CH;
+                c.beginPath(); c.moveTo(x, y); c.lineTo(x - 3, y + 14); c.stroke();
+            }
+            txt(c, '♪ lofi beats to simulate to', 40, 50, 26, '#e9d5ff', 'left', 600);
+            for (let i = 0; i < 12; i++) {
+                c.fillStyle = '#c4b5fd';
+                const h = 6 + 24 * Math.abs(Math.sin(t * 3 + i * 0.7));
+                c.fillRect(780 + i * 12, 500 - h, 8, h);
+            }
+        }
+
+        // 6. I Built a Browser Inside a Browser (infinite zoom)
+        function sceneNested(c, t) {
+            const W = CW, H = CH, f = (t * 0.25) % 1, shift = Math.floor(t * 0.25);
+            const Fx = W * 0.5, Fy = (H * 0.22) / 0.28;
+            c.fillStyle = '#0f172a'; c.fillRect(0, 0, W, H);
+            c.save();
+            c.translate(Fx, Fy); c.scale(Math.pow(0.8, -f), Math.pow(0.72, -f)); c.translate(-Fx, -Fy);
+            for (let k = 0; k < 10; k++) {
+                c.fillStyle = '#1e293b'; c.fillRect(0, 0, W, H * 0.1);
+                c.fillStyle = '#f1f5f9'; rr(c, W * 0.02, H * 0.03, W * 0.18, H * 0.08, H * 0.02); c.fill();
+                c.fillStyle = '#f1f5f9'; c.fillRect(0, H * 0.1, W, H * 0.12);
+                c.fillStyle = '#cbd5e1'; rr(c, W * 0.14, H * 0.12, W * 0.72, H * 0.08, H * 0.04); c.fill();
+                ['#f87171', '#fbbf24', '#4ade80'].forEach((col, i) => {
+                    c.fillStyle = col; c.beginPath(); c.arc(W * (0.03 + i * 0.03), H * 0.16, H * 0.014, 0, 7); c.fill();
+                });
+                c.fillStyle = `hsl(${((k + shift) * 47) % 360},70%,55%)`; c.fillRect(0, H * 0.22, W, H * 0.78);
+                c.translate(W * 0.1, H * 0.22); c.scale(0.8, 0.72);
+            }
+            c.restore();
+            c.fillStyle = 'rgba(0,0,0,0.6)'; rr(c, 330, 478, 300, 40, 20); c.fill();
+            txt(c, 'BROWSER #' + (shift + 1) + ' OF ∞', 480, 498, 20, '#ffffff', 'center', 700);
+        }
+
+        // 7. Cat vs Cucumber (Compilation)
+        function drawCat(c, x, y, scared, t) {
+            c.save(); c.translate(x, y);
+            c.strokeStyle = '#f59e0b'; c.lineWidth = 16; c.lineCap = 'round';
+            c.beginPath(); c.moveTo(-60, -10);
+            c.quadraticCurveTo(-125, -30 - Math.sin(t * (scared ? 20 : 3)) * 20, -105, -105 + Math.sin(t * (scared ? 20 : 3)) * 12);
+            c.stroke();
+            c.fillStyle = '#f59e0b';
+            c.beginPath(); c.ellipse(0, 0, 75, 46, 0, 0, 7); c.fill();
+            rr(c, -50, 20, 22, 36, 8); c.fill(); rr(c, 28, 20, 22, 36, 8); c.fill();
+            c.strokeStyle = '#d97706'; c.lineWidth = 6;
+            for (let i = -2; i <= 2; i++) { c.beginPath(); c.moveTo(i * 22, -44); c.lineTo(i * 22 + 5, -22); c.stroke(); }
+            c.fillStyle = '#f59e0b'; c.beginPath(); c.arc(70, -38, 36, 0, 7); c.fill();
+            c.beginPath(); c.moveTo(45, -62); c.lineTo(52, -102); c.lineTo(78, -70); c.fill();
+            c.beginPath(); c.moveTo(82, -70); c.lineTo(100, -100); c.lineTo(104, -60); c.fill();
+            c.fillStyle = '#fda4af'; c.beginPath(); c.moveTo(54, -70); c.lineTo(54, -90); c.lineTo(68, -72); c.fill();
+            if (scared) {
+                const sh = Math.sin(t * 40) * 1.5;
+                c.fillStyle = '#fff'; c.beginPath(); c.arc(58, -44, 11, 0, 7); c.arc(86, -44, 11, 0, 7); c.fill();
+                c.fillStyle = '#111'; c.beginPath(); c.arc(60 + sh, -44, 4, 0, 7); c.arc(88 + sh, -44, 4, 0, 7); c.fill();
+                c.beginPath(); c.ellipse(76, -18, 6, 9, 0, 0, 7); c.fill();
+            } else {
+                c.fillStyle = '#111'; c.beginPath(); c.ellipse(60, -44, 6, 9, 0, 0, 7); c.ellipse(88, -44, 6, 9, 0, 0, 7); c.fill();
+                c.fillStyle = '#fff'; c.beginPath(); c.arc(62, -47, 2, 0, 7); c.arc(90, -47, 2, 0, 7); c.fill();
+                c.strokeStyle = '#111'; c.lineWidth = 2.5; c.beginPath(); c.arc(76, -26, 6, 0.2, Math.PI - 0.2); c.stroke();
+            }
+            c.fillStyle = '#f472b6'; c.beginPath(); c.moveTo(70, -34); c.lineTo(82, -34); c.lineTo(76, -27); c.fill();
+            c.strokeStyle = 'rgba(0,0,0,0.45)'; c.lineWidth = 1.5;
+            for (const d of [-6, 4]) { c.beginPath(); c.moveTo(96, -28 + d); c.lineTo(125, -32 + d * 2); c.stroke(); c.beginPath(); c.moveTo(56, -28 + d); c.lineTo(30, -32 + d * 2); c.stroke(); }
+            c.restore();
+        }
+
+        function sceneCat(c, t) {
+            const lt = t % 7;
+            c.fillStyle = '#fde7c8'; c.fillRect(0, 0, CW, CH);
+            c.fillStyle = 'rgba(255,255,255,0.25)';
+            for (let i = 0; i < 12; i++) c.fillRect(i * 80, 0, 40, 400);
+            c.fillStyle = '#b9824f'; c.fillRect(0, 400, CW, 140);
+            c.fillStyle = 'rgba(0,0,0,0.12)';
+            for (let i = 0; i < 8; i++) c.fillRect(0, 400 + i * 20, CW, 2);
+            const cx = lt < 2.4 ? 1100 - (lt / 2.4) * 520 : 580;
+            c.fillStyle = '#4ade80'; rr(c, cx - 85, 366, 170, 44, 22); c.fill();
+            c.fillStyle = '#16a34a';
+            for (let i = 0; i < 6; i++) c.fillRect(cx - 55 + i * 26, 368, 5, 40);
+            c.fillStyle = 'rgba(255,255,255,0.35)'; rr(c, cx - 70, 372, 120, 6, 3); c.fill();
+            c.fillStyle = '#fff'; c.beginPath(); c.arc(cx - 58, 384, 8, 0, 7); c.arc(cx - 36, 384, 8, 0, 7); c.fill();
+            c.fillStyle = '#111'; c.beginPath(); c.arc(cx - 61, 385, 3.5, 0, 7); c.arc(cx - 39, 385, 3.5, 0, 7); c.fill();
+            c.strokeStyle = '#14532d'; c.lineWidth = 3;
+            c.beginPath(); c.moveTo(cx - 68, 372); c.lineTo(cx - 50, 377); c.moveTo(cx - 46, 377); c.lineTo(cx - 28, 372); c.stroke();
+            if (lt < 4.5) {
+                const x = lt < 3.4 ? 230 : 230 - (lt - 3.4) * 420;
+                const jump = lt > 2.6 && lt < 3.4 ? 170 * Math.sin((lt - 2.6) / 0.8 * Math.PI) : 0;
+                drawCat(c, x, 345 - jump, lt >= 2.2, t);
+                if (lt > 2.2 && lt < 3.2) txt(c, '!', x + 70, 190 - jump, 90, '#ef4444');
+            }
+            if (lt > 4.8) {
+                c.globalAlpha = Math.min(1, (lt - 4.8) * 2);
+                txt(c, 'THE CUCUMBER WINS', 480, 130, 56, '#14532d');
+                c.globalAlpha = 1;
+            }
+            const fade = lt < 0.3 ? 1 - lt / 0.3 : lt > 6.7 ? (lt - 6.7) / 0.3 : 0;
+            if (fade > 0) { c.fillStyle = `rgba(0,0,0,${fade})`; c.fillRect(0, 0, CW, CH); }
+        }
+
+        const SCENES = {};
+        [sceneTrailer, sceneAI, sceneClicker, sceneVersus, sceneLofi, sceneNested, sceneCat]
+            .forEach((fn, i) => { SCENES[VIDEOS[i].t] = fn; });
+        const THUMB_T = [14, 5, 6, 3, 4, 2, 3.3];
+
+        function drawFrame(cv, v, t) {
+            const c = cv.getContext && cv.getContext('2d');
+            if (!c) return;
+            try {
+                c.setTransform(cv.width / CW, 0, 0, cv.height / CH, 0, 0);
+                (SCENES[v.t] || sceneTrailer)(c, t);
+            } catch (err) { console.error('Zoon scene error:', err); }
+        }
+
+        function drawThumbs() {
+            document.querySelectorAll('canvas[data-thumb]').forEach(cv => {
+                const i = Number(cv.dataset.thumb);
+                drawFrame(cv, VIDEOS[i], THUMB_T[i] || 3);
+            });
+        }
+
+        function drawMain() {
+            const cv = document.getElementById('z-canvas');
+            if (!cv) return false;
+            drawFrame(cv, getVideo(state.zoon.video), state.zoon.time);
+            return true;
+        }
+
+        function stopTick() { if (rafId) { cancelAnimationFrame(rafId); rafId = null; } }
+
+        function updateZoonBar() {
+            const bar = document.getElementById('z-bar'), label = document.getElementById('z-time');
+            if (!bar || !label) { stopTick(); return; }
+            const v = getVideo(state.zoon.video), secs = parseDur(v.dur);
+            bar.style.width = Math.min(100, (state.zoon.time / secs) * 100) + '%';
+            label.textContent = fmtTime(state.zoon.time) + ' / ' + v.dur;
+        }
+
+        function zoonAfter() {
+            stopTick();
+            drawThumbs();
+            drawMain();
+            if (!state.zoon.playing) return;
+            lastTs = performance.now();
+            const loop = (ts) => {
+                const z = state.zoon, secs = parseDur(getVideo(z.video).dur);
+                const dt = Math.min(0.1, Math.max(0, (ts - lastTs) / 1000));
+                lastTs = ts;
+                z.time = Math.min(secs, z.time + dt);
+                if (!drawMain()) { stopTick(); return; }
+                updateZoonBar();
+                if (z.time >= secs) { z.playing = false; stopTick(); renderViewport(true); return; }
+                rafId = requestAnimationFrame(loop);
+            };
+            rafId = requestAnimationFrame(loop);
+        }
+
+        // ---------- Browser core ----------
+        function init() {
+            createNewTab();
+
+            document.getElementById('new-tab-btn').addEventListener('click', createNewTab);
+            document.getElementById('back-btn').addEventListener('click', goBack);
+            document.getElementById('forward-btn').addEventListener('click', goForward);
+            document.getElementById('refresh-btn').addEventListener('click', refreshTab);
+
+            const addr = document.getElementById('address-input');
+            addr.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                    const url = normalizeUrl(addr.value);
+                    addr.blur();
+                    if (url) navigateTo(url);
+                } else if (e.key === 'Escape') {
+                    addr.value = currentUrl();
+                    addr.blur();
+                }
+            });
+            addr.addEventListener('focus', () => addr.select());
+
+            const viewport = document.getElementById('viewport');
+            viewport.addEventListener('click', (e) => {
+                const g = e.target.closest('[data-go]');
+                if (g) navigateTo(g.dataset.go);
+            });
+            viewport.addEventListener('mousedown', (e) => {
+                const s = e.target.closest('[data-search]');
+                if (s) { e.preventDefault(); gurgleSearch(s.dataset.search); }
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'l') {
+                    e.preventDefault();
+                    addr.focus();
+                }
+            });
+        }
+
+        function activeTab() { return state.tabs.find(t => t.id === state.activeTabId); }
+        function currentUrl() { const t = activeTab(); return t.history[t.currentIndex]; }
+
+        function createNewTab() {
+            const id = ++state.tabCounter;
+            state.tabs.push({ id, history: ['about:home'], currentIndex: 0, title: 'New Tab' });
+            setActiveTab(id);
+        }
+
+        function closeTab(e, id) {
+            e.stopPropagation();
+            if (state.tabs.length === 1) return;
+
+            const index = state.tabs.findIndex(t => t.id === id);
+            const wasActive = state.activeTabId === id;
+
+            state.tabs.splice(index, 1);
+            if (wasActive) {
+                state.activeTabId = state.tabs[Math.max(0, index - 1)].id;
+            }
+            renderTabs();
+            renderViewport();
+        }
+
+        function setActiveTab(id) {
+            state.activeTabId = id;
+            renderTabs();
+            renderViewport();
+        }
+
+        function navigateTo(url) {
+            const tab = activeTab();
+            if (url === tab.history[tab.currentIndex]) { renderViewport(); return; }
+            tab.history = tab.history.slice(0, tab.currentIndex + 1);
+            tab.history.push(url);
+            tab.currentIndex++;
+            renderViewport();
+        }
+
+        function goBack() {
+            const tab = activeTab();
+            if (tab.currentIndex > 0) { tab.currentIndex--; renderViewport(); }
+        }
+
+        function goForward() {
+            const tab = activeTab();
+            if (tab.currentIndex < tab.history.length - 1) { tab.currentIndex++; renderViewport(); }
+        }
+
+        function refreshTab() { renderViewport(); }
+
+        function renderTabs() {
+            const tabBar = document.getElementById('tab-bar');
+            const newBtn = document.getElementById('new-tab-btn');
+
+            tabBar.querySelectorAll('.tab').forEach(t => t.remove());
+
+            state.tabs.forEach(tab => {
+                const tabEl = document.createElement('div');
+                tabEl.className = `tab ${tab.id === state.activeTabId ? 'active' : ''}`;
+                tabEl.onclick = () => setActiveTab(tab.id);
+                tabEl.innerHTML = `
+                    <span class="truncate pr-4">${esc(tab.title)}</span>
+                    <span class="tab-close" onclick="closeTab(event, ${tab.id})">✕</span>
+                `;
+                tabBar.insertBefore(tabEl, newBtn);
+            });
+        }
+
+        function renderViewport(keepScroll) {
+            const tab = activeTab();
+            const url = tab.history[tab.currentIndex];
+            const viewport = document.getElementById('viewport');
+            const scroll = viewport.scrollTop;
+            stopTick();
+
+            const addr = document.getElementById('address-input');
+            if (document.activeElement !== addr) addr.value = url;
+            document.getElementById('back-btn').className = `nav-btn ${tab.currentIndex === 0 ? 'disabled' : ''}`;
+            document.getElementById('forward-btn').className = `nav-btn ${tab.currentIndex === tab.history.length - 1 ? 'disabled' : ''}`;
+
+            let site = null, rest = '';
+            if (url === 'about:home') {
+                site = sites['home'];
+            } else {
+                const parts = splitUrl(url);
+                rest = parts.rest;
+                site = sites[parts.host] || null;
+                if (parts.host !== 'zoon.tv') state.zoon.playing = false;
+            }
+            if (url === 'about:home') state.zoon.playing = false;
+
+            if (site) {
+                tab.title = site.titleFn ? site.titleFn(rest) : site.title;
+                viewport.innerHTML = site.render(rest);
+            } else {
+                tab.title = '404 Not Found';
+                viewport.innerHTML = `
+                    <div class="flex flex-col items-center justify-center h-full text-slate-500">
+                        <svg class="mb-4" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                        <h1 class="text-3xl font-bold mb-2">404 Web Not Simulated</h1>
+                        <p>The URL you requested was not found in our database.</p>
+                        <button onclick="navigateTo('about:home')" class="mt-6 px-6 py-2 bg-slate-800 text-white rounded-lg">Go Home</button>
+                    </div>
+                `;
+            }
+            viewport.scrollTop = keepScroll ? scroll : 0;
+            if (site && site.after) site.after();
+            renderTabs();
+        }
+
+        function toast(msg) {
+            const old = document.getElementById('toast');
+            if (old) old.remove();
+            const el = document.createElement('div');
+            el.id = 'toast';
+            el.textContent = msg;
+            el.className = 'fixed bottom-10 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-sm px-5 py-2.5 rounded-full shadow-xl z-50';
+            document.body.appendChild(el);
+            setTimeout(() => el.remove(), 1800);
+        }
+
+        // ---------- Actions ----------
+        // Gurgle
+        window.gurgleSearch = (value) => {
+            const q = (value || '').trim();
+            if (!q) return;
+            state.searches = [q, ...state.searches.filter(s => s !== q)].slice(0, 5);
+            navigateTo('gurgle.com?q=' + encodeURIComponent(q));
+        };
+        window.gurgleCurious = () => {
+            const options = SITE_INDEX.filter(s => s.url !== 'about:home');
+            navigateTo(options[Math.floor(Math.random() * options.length)].url);
+        };
+        window.gurgleSuggest = (input) => {
+            const box = input.parentElement.querySelector('.sug-box');
+            const v = input.value.trim().toLowerCase();
+            if (!v) { box.classList.add('hidden'); return; }
+            const pool = [...new Set([...state.searches, ...SUGGEST])]
+                .filter(s => s.toLowerCase().includes(v) && s.toLowerCase() !== v).slice(0, 6);
+            box.innerHTML = pool.map(s => `<div data-search="${esc(s)}" class="px-5 py-2 hover:bg-slate-100 cursor-pointer text-sm text-slate-700">${esc(s)}</div>`).join('');
+            box.classList.toggle('hidden', !pool.length);
+        };
+
+        // FriendBook
+        window.toggleLike = (id) => {
+            state.likedPosts.has(id) ? state.likedPosts.delete(id) : state.likedPosts.add(id);
+            renderViewport(true);
+        };
+        window.toggleComments = (id) => {
+            state.openComments.has(id) ? state.openComments.delete(id) : state.openComments.add(id);
+            renderViewport(true);
+            const input = document.getElementById('fb-c-' + id);
+            if (input) input.focus();
+        };
+        window.fbComment = (id) => {
+            const input = document.getElementById('fb-c-' + id);
+            const text = input && input.value.trim();
+            if (!text) return;
+            state.posts.find(p => p.id === id).comments.push({ a: 'You', t: text });
+            renderViewport(true);
+            const again = document.getElementById('fb-c-' + id);
+            if (again) again.focus();
+        };
+        window.sharePost = (id) => {
+            state.posts.find(p => p.id === id).shares++;
+            renderViewport(true);
+            toast('Post shared to your timeline');
+        };
+        window.fbPost = () => {
+            const input = document.getElementById('fb-compose');
+            const text = input && input.value.trim();
+            if (!text) return;
+            state.posts.unshift({ id: ++state.postCounter, author: 'You', content: text, time: 'Just now', likes: 0, shares: 0, comments: [] });
+            renderViewport(true);
+        };
+        window.fbSearch = (value) => {
+            const q = value.trim();
+            navigateTo(q ? 'friendbook.com?q=' + encodeURIComponent(q) : 'friendbook.com');
+        };
+
+        // Zoon
+        window.zoonToggle = () => {
+            const z = state.zoon, secs = parseDur(getVideo(z.video).dur);
+            if (z.time >= secs) z.time = 0;
+            z.playing = !z.playing;
+            renderViewport(true);
+        };
+        window.zoonSeek = (e) => {
+            const rect = e.currentTarget.getBoundingClientRect();
+            const frac = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+            state.zoon.time = frac * parseDur(getVideo(state.zoon.video).dur);
+            updateZoonBar();
+            drawMain();
+        };
+        window.zoonLike = () => {
+            const l = state.zoon.liked, t = state.zoon.video;
+            l.has(t) ? l.delete(t) : l.add(t);
+            renderViewport(true);
+        };
+        window.zoonSub = (ch) => {
+            const s = state.zoon.subs;
+            s.has(ch) ? s.delete(ch) : s.add(ch);
+            renderViewport(true);
+        };
+        window.zoonShare = () => toast('Link copied to clipboard');
+        window.zoonComment = () => {
+            const input = document.getElementById('z-comment');
+            const text = input && input.value.trim();
+            if (!text) return;
+            const z = state.zoon;
+            (z.comments[z.video] || (z.comments[z.video] = [])).push({ a: 'You', t: text });
+            renderViewport(true);
+        };
+        window.zoonSearch = (value) => {
+            const q = value.trim();
+            navigateTo(q ? 'zoon.tv?q=' + encodeURIComponent(q) : 'zoon.tv');
+        };
+
+        // Clicker Tycoon
+        window.handleBigClick = () => {
+            state.clickerScore += state.clickerPower;
+            renderViewport(true);
+        };
+
+        window.buyUpgrade = (cost, power) => {
+            if (state.clickerScore >= cost) {
+                state.clickerScore -= cost;
+                state.clickerPower += power;
+                renderViewport(true);
+            }
+        };
+
+        window.navigateTo = navigateTo;
+        window.closeTab = closeTab;
+
+        init();
+    </script>
+</body>
+</html>
